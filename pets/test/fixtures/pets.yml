@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cuddlable_id: 
+  cuddlable_type: Cuddlable
+  name: MyString
+
+two:
+  cuddlable_id: 
+  cuddlable_type: Cuddlable
+  name: MyString

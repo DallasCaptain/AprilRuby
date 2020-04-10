@@ -3,3 +3,4 @@ class RemovePasswordColumnFromUsers < ActiveRecord::Migration
     remove_column :users, :password, :string
   end
 end
+

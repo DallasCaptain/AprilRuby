@@ -1,3 +1,4 @@
 .vagrant/
 bootstrap.sh
 Vagrantfile
+*.sqlite3/

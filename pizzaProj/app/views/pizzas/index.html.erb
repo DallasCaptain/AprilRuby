@@ -1,0 +1,12 @@
+<h1>Pizzas#index</h1>
+
+<table>
+<tr> <th>Id</th><th>Toppings</th><th>Sauce</th></tr>
+<% @pizzas.each do |pizza| %>
+    <tr>
+        <td><%= pizza.id %></td>
+        <td><%= pizza.toppings %></td>
+        <td><%= pizza.sauce %></td>
+    </tr>
+<% end %>
+</table>
