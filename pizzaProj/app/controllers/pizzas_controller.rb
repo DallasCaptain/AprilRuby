@@ -1,11 +1,17 @@
 class PizzasController < ApplicationController
+  layout 'pizza', only: [:index, :show, :new]
+  
+
   def index
+    title
     @pizzas = Pizza.all
     
     
   end
 
   def new
+    title
+    @pizza = Pizza.new
   end
 
   def create
@@ -19,7 +25,7 @@ class PizzasController < ApplicationController
   end
 
   def edit
-    redirect_to "/pizzas"
+    
   end
 
   def update
@@ -31,6 +37,10 @@ class PizzasController < ApplicationController
   private 
   def pizza_params
     params.require(:pizza).permit(:toppings, :sauce)
+  end
+
+  def title
+    @title = "Best Pizza on earth"
   end
 
 

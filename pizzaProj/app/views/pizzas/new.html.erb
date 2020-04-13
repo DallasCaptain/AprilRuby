@@ -1,8 +1,10 @@
 <h1>Pizzas#new</h1>
+<% content_for :title, @title %>
 
-<form action='/pizzas/' method='post'>
-    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-    <input type='text' name='pizza[sauce]' placeholder='sauce' />
-    <input type='text' name='pizza[toppings]' placeholder='toppings' />
-    <input type='submit' value='Create' />
-</form>
+
+<%= form_for(@pizza) do |f| %>
+    <%= f.label :sauce %>
+    <%= f.text_field :sauce %>
+    <%= f.text_field :toppings %>
+    <%= submit_tag 'Create' %>
+<% end %>

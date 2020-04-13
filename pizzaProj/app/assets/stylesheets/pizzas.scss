@@ -1,3 +1,25 @@
 // Place all the styles related to the Pizzas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1{
+    background-color: burlywood;
+}
+
+
+tr{
+    background-color: darkgreen;
+    th{
+        color: darkorange;
+    }
+    td{
+        color: darkred;
+    }
+}
+// tr th{
+//     color: cornflowerblue;
+// }
+
+// tr td{
+//     color: darkblue;
+// }

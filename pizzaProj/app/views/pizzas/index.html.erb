@@ -1,5 +1,5 @@
 <h1>Pizzas#index</h1>
-
+<img src='<%= asset_path 'kitty.jpg' %>'>
 <table>
 <tr> <th>Id</th><th>Toppings</th><th>Sauce</th></tr>
 <% @pizzas.each do |pizza| %>
@@ -10,3 +10,19 @@
     </tr>
 <% end %>
 </table>
+
+
+<% content_for :title, @title %>
+<% content_for :toppings do %>
+<table>
+    <tr>
+        <th>Topping</th>
+    </tr>
+    <tr>
+        <td>Pinnapple</td>
+    </tr>
+</table>
+<% end %>
+<% content_for :some_javascript do %>
+    alert("This alert comes from the all users page");
+<% end %>

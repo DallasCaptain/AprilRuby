@@ -7,10 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>Welcome to Our pizza Shop</h1>
-<%= yield %>
+<h1>Welcome To Our Pizza Shop</h1>
+<%= yield :title %>
+<%= yield %> <%= yield :toppings%>
 
-<h1>Please Shop with us again</h1>
-
+<h1>Please Shop With Us Again</h1>
+<script>
+<%= yield :some_javascript %>
+</script>
 </body>
 </html>
